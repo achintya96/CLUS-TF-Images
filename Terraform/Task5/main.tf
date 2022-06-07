@@ -302,19 +302,6 @@ resource "null_resource" "EC2Commands" {
       "cd cisco-live-2022-aws-containers/singlepage",
       "docker-compose up -d"
           
-
-      
-      # Code for Compose, for all EC2s
-      #"sudo curl -L \"https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose",
-      #"sudo chmod +x /usr/local/bin/docker-compose",
-      #"docker-compose --version",
-      #"sudo yum install git -y",
-      #"git clone https://gitlab.com/acmurali/cisco-live-2022-aws-containers -y",
-      #"cd /cisco-live-2022-aws-containers/ciscolive-containers",
-      #"cp docker-compose-fe.yaml docker-compose.yaml",
-      #"docker-compose up -d"
-      
-      
     ]
     connection {
       type        = "ssh"
