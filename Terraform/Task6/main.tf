@@ -18,23 +18,32 @@ provider "aws" {
 }
 
 
-#Hardcoding the instances for the moment, will use filters in the VPC and populate these instance IDs 
+#Hardcoding the instances for the moment, you can use filters in the VPC and populate these instance IDs 
 
 
 
 data "aws_instance" "ec2-1" {
- instance_id = "i-0fd54d9cbe51dd3eb"
+ instance_id = "i-0fd54d9cbe51dd3eb" # insert instance ID for front end 
 }
 
 
 data "aws_instance" "ec2-2" {
- instance_id = "i-0f12a69565eb084bd"
+ instance_id = "i-0f12a69565eb084bd" # insert instance ID for back end 
 }
 
 
 data "aws_instance" "ec2-3" {
- instance_id = "i-05117fc861e2a947f"
+ instance_id = "i-05117fc861e2a947f"  # insert instance ID for DB
 }
+
+
+#code for AMI backup
+resource "aws_ami_from_instance" "amibackup" {
+  name="backupami"
+  source_instance_id= "i-0fd54d9cbe51dd3eb"
+}
+
+
 
 
 
