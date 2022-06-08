@@ -20,9 +20,9 @@ variable "tenant_stuff" {
     description  = string
   })
   default = {
-    tenant_name  = "CLUS_TENANT_XX" # change XX to your assigned user name 
-    display_name = "CLUS_TENANT_XX" # change XX to your assigned user name 
-    description  = " Terraform Created Tenant for user XX" # change XX to your assigned user name 
+    tenant_name  = "something" 
+    display_name = "somethingcool" 
+    description  = "somethinggood" 
   }
 }
 
