@@ -1,9 +1,9 @@
 variable "awsstuff" {
   type = map(any)
   default = {
-    aws_account_id         = "637583011518"
+    aws_account_id         = "1234567890"
     is_aws_account_trusted = false
-    aws_access_key_id      = "AKIAZI4XIV27PJD4OGWL"
-    aws_secret_key         = "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"
+    aws_access_key_id      = "ACCCESSSSSSSSSSSS"
+    aws_secret_key         = "SECRETTTTKEYYYYYYYYYY"
   }
 }
