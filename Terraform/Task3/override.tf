@@ -21,8 +21,8 @@ variable "awsstuff" {
 variable "creds" {
   type = map(any)
   default = {
-    username = "CLUS-userXX"
-    password = "CLUS-userXX-123!"
+    username = "CLUS-userXX"      # XX is your user ID
+    password = "CLUS-userXX-123!" # XX is your user ID
     url      = "https://198.19.202.12/"
 
   }
