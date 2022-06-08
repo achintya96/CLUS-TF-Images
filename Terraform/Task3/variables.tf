@@ -11,7 +11,9 @@ variable "creds" {
   }
 }
 
-
+variable "username"{
+  type = string 
+  default = "some_value"
 
 variable "tenant_stuff" {
   type = object({
@@ -113,10 +115,6 @@ variable "zone3" {
   default = "some_value"
 }
 
-variable "tgw_name" {
-  type = string
-  default = "your_tgw_name"
-}
 
 variable "awsstuff" {
   type = object({
