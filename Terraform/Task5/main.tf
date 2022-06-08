@@ -384,7 +384,7 @@ aws_instance.ec2-3
 ]
 }
 
-# addinf a default route to the IGW 
+# adding a default route to the IGW 
 
 data "aws_route_table" "table" {
  subnet_id= local.subnet1
