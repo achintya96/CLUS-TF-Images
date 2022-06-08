@@ -23,24 +23,24 @@ provider "aws" {
 
 
 data "aws_instance" "ec2-1" {
- instance_id = "i-0fd54d9cbe51dd3eb" # insert instance ID for front end 
+ instance_id = "i-0XXXXXXXXXXXXXXX" # insert instance ID for front end 
 }
 
 
 data "aws_instance" "ec2-2" {
- instance_id = "i-0f12a69565eb084bd" # insert instance ID for back end 
+ instance_id = "i-0XXXXXXXXXXXXXXX" # insert instance ID for back end 
 }
 
 
 data "aws_instance" "ec2-3" {
- instance_id = "i-05117fc861e2a947f"  # insert instance ID for DB
+ instance_id = "i-0XXXXXXXXXXXXXXX" # insert instance ID for DB
 }
 
 
 #code for AMI backup
 resource "aws_ami_from_instance" "amibackup" {
   name="backupami"
-  source_instance_id= "i-0fd54d9cbe51dd3eb"
+  source_instance_id= "i-0XXXXXXXXXXXX" #insert FE instance ID
 }
 
 
