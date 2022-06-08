@@ -277,7 +277,7 @@ resource "null_resource" "update" {
   }
 }
 
-# Now we will run our singlepage container container inside the front end EC2 
+# Now we will standup our singlepage container inside the front end EC2 
 resource "null_resource" "EC2Commands" {
   depends_on = [null_resource.update]
 
