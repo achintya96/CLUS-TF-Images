@@ -14,6 +14,7 @@ variable "creds" {
 variable "username"{
   type = string 
   default = "some_value"
+}
 
 variable "tenant_stuff" {
   type = object({
