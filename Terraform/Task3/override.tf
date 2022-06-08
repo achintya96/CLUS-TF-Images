@@ -9,9 +9,9 @@ variable "awsstuff" {
     aws_secret_key    = string
   })
   default = {
-    aws_account_id    = "637583011518"
-    aws_access_key_id = "AKIAZI4XIV27PJD4OGWL"
-    aws_secret_key    = "aG8487cVdm4vP8L2NjIjPr7cQ9aZDp5SV4D7PG5n"
+    aws_account_id    = "12345678" #Enter your account ID
+    aws_access_key_id = "acccesssssssssss" # Enter your access key id
+    aws_secret_key    = "secrettttttttttttttttttttt" # Enter your secret key
   }
 }
 
@@ -21,10 +21,9 @@ variable "awsstuff" {
 variable "creds" {
   type = map(any)
   default = {
-    username = "admin"
-    password = "C1sco12345!"
+    username = "CLUS-userXX"
+    password = "CLUS-userXX-123!"
     url      = "https://198.19.202.12/"
-#    domain   = "put_in_auth_domain_defined_in_ND" # if you are using local user, comment this out.  
-                                                  # Make sure to also comment out in variables.tf file.
+
   }
 }
