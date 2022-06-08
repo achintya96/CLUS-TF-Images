@@ -34,7 +34,7 @@ plan:
 apply:
         stage: apply
         script:
-                - terraform apply -auto-approve -parallelism=1
+                - terraform apply -auto-approve 
         dependencies:
                 - plan
         when: manual
