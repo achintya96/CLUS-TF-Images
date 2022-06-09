@@ -8,7 +8,7 @@ data "mso_site" "aws_site" {
 
 
 data "mso_user" "user1" {
-  username = var.username             #change user name
+  username = var.username             #use your user name variable 
 }
 
 
@@ -28,7 +28,7 @@ resource "mso_tenant" "tenant" {
     aws_access_key_id = var.awsstuff.aws_access_key_id
     aws_secret_key    = var.awsstuff.aws_secret_key
   }
-  user_associations { user_id = data.mso_user.admin.id }
+  user_associations { user_id = data.mso_user.user1.id }
 }
 
 
