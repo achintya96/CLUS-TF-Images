@@ -7,8 +7,8 @@ data "mso_site" "aws_site" {
 }
 
 
-data "mso_user" "admin" {
-  username = "admin"
+data "mso_user" "user1" {
+  username = var.username             #change user name
 }
 
 
