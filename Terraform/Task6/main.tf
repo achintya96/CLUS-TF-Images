@@ -37,17 +37,9 @@ data "aws_instance" "ec2-3" {
 }
 
 
-#code for AMI backup
-resource "aws_ami_from_instance" "amibackup" {
-  name="backupami"
-  source_instance_id= "i-0XXXXXXXXXXXX" #insert FE instance ID
-}
 
 
-
-
-
-#track the state of the ec2
+#track the state of the ec2(optional)
 locals {
  ec2state= data.aws_instance.ec2-1.instance_state
 }
